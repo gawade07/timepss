@@ -1,0 +1,789 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Mea+Culpa&family=Oswald:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+
+
+$FontPlayfair:'Playfair Display', serif;
+
+
+*
+{
+    padding: 0%; margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: none; outline: none;
+
+    transition: all .22s linear;
+    font-family: 'Oswald', sans-serif;
+    // font-family: 'Playfair Display', serif;
+    // font-family: 'Mea Culpa', cursive;
+}
+.box
+{
+    width: 100%;
+   
+}
+
+
+// header
+// {
+// position: fixed;
+// padding: 1rem 6rem;   
+// display: flex;
+// align-items: center; 
+// justify-content: space-between;
+// left: 0 ; right:  0%;
+
+// &.active
+// {
+
+// }
+
+header
+{
+position: fixed;
+padding: 1rem 6rem;   
+display: flex;
+align-items: center; 
+justify-content: space-between;
+left: 0 ; right:  0%;width: 100%;
+z-index: 1000;
+
+&.active
+{
+    background: rgba(216, 207, 207, 0.8);
+    color: black;
+
+    .logo
+    {
+        color: black;
+    }
+
+}
+
+.logo
+{
+    position: relative;
+
+
+    .brand-name, span
+    
+    {
+        font-family: 'Island Moments', cursive;
+        font-style:italic;
+       font-weight: 100 ;
+       font-size: 2rem;color: white;
+    }
+    .brand-para
+    {
+        position: absolute;
+        top:80%;
+        left: 1%;
+        font-size: .8rem;color: white;
+    }
+}
+    .menu
+    {
+       display: flex;
+       justify-content: right;
+       align-items: center;
+       color: rgb(90, 25, 25);
+       letter-spacing: .08rem;
+
+
+       #menu-btn
+       {
+           width: 5%;
+           display: none;
+           img 
+           {
+            width: 100%;
+           }
+       }
+       ul 
+       { display: flex;
+
+           p
+           {
+            font-size: 1rem;
+            margin-left: 1rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            
+
+            &:focus,&:hover
+            {
+                color: rgb(122, 117, 117);
+            }
+
+          
+           }
+       }
+    }
+
+}
+
+
+
+.logo
+{
+    position: relative;
+    .brand-name, span
+    {
+        font-family: 'Island Moments', cursive;
+        font-style:italic;
+       font-weight: 100 ;
+       font-size: 2rem;color: white;
+    }
+    .brand-para
+    {
+        position: absolute;
+        top:80%;
+        left: 1%;
+        font-size: .8rem;color: white;
+    }
+}
+    .menu
+    {
+       display: flex;
+       justify-content: right;
+       align-items: center;
+       color: white;
+       letter-spacing: .08rem;
+
+
+       #menu-btn
+       {
+           
+           display: none;
+           font-size: 1.2rem;
+
+          
+       }
+       ul 
+       { display: flex;
+
+           p
+           {
+            font-size: 1rem;
+            margin-left: 1rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            
+
+            &:focus,&:hover
+            {
+                color: rgb(122, 117, 117);
+            }
+
+          
+           }
+       }
+    }
+
+
+
+
+
+
+
+
+.home
+{
+    background:linear-gradient(rgba(0, 0, 0, .8),rgba(0, 0, 0, .7)), url('/img/main\ bg.png') no-repeat;
+    max-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    
+
+    .box-model
+    {
+        display: flex;
+       
+
+        .box
+        {
+            
+           h1 
+           {
+               font-size: 3.5rem;
+           }
+
+           .icons
+           {
+               i 
+               {
+                   margin: 1rem .5rem;
+                   cursor: pointer;
+
+                   &:hover
+                   {
+                      color: rgb(223, 111, 20);
+                   }
+
+               }
+           }
+           .buttons
+           {
+               display: flex;
+               cursor: pointer;
+
+               .btn
+               {
+                   margin: 1rem ;
+                   border-radius: 5rem;color: black;
+                   padding: .2rem 2rem;background: rgb(197, 197, 197);
+                   border: .1rem solid rgb(197, 197, 197);
+
+                   &:hover
+                   {
+                       background: transparent;
+                       color:rgb(197, 197, 197);;
+                   }
+               }
+           }
+
+            &.home-content
+            {
+                padding:5rem 0  6rem 5rem;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+               
+            }
+           
+
+            img 
+        {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        }
+       
+        
+    }
+}
+
+section
+{
+    padding: 2rem 6rem;
+    text-align: center;
+}
+.heading
+{
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    display: inline-block;
+    text-transform: uppercase;
+    
+}
+
+
+.buttons
+{
+    margin: 2rem;
+    .btn a
+    
+    {
+       padding: .5rem 2rem;
+       background: rgb(209, 207, 207);
+       display: inline-block;
+       border: 0.2rem solid white;
+       border-radius: 5rem;
+       color: black;
+
+       &:hover
+       {
+           background: transparent;
+           color: white;
+       }
+        
+    }
+}
+
+
+.about
+{
+    background: rgb(219, 195, 195);
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    .box-model
+    {
+       margin: 1rem;
+       color: rgb(32, 32, 32);
+
+     
+
+       .box
+       {
+           h2 
+           {
+               text-align: start;
+               margin: 1rem;
+           }
+
+           .box-model2
+           {
+               display: flex;
+               text-align: start;
+               
+
+              
+           }
+
+       }
+    }
+}
+
+.eduction
+{
+    background: rgb(250, 250, 250);
+    position: absolute;
+    left: 0%; right: 0;
+    
+    .box-model
+    {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+        .box
+        {max-width: 15rem;
+         position: relative;
+        
+        //  &:hover
+        //  {
+        //     clip-path: circle(0.0% at 49% 100%);
+        //  }
+       
+
+         h2 
+         {
+             width: 100%; height: 100%;
+             background: rgba(156, 136, 136,.5);
+             position: absolute;
+             top: 0%;
+             left: 0;
+             right: 0;
+             text-align: center;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             color: blanchedalmond;
+             cursor: pointer;
+            
+             clip-path: circle(100.0% at 50% 100%);
+             &:hover
+             {
+                clip-path: circle(2.1% at 50% 100%);
+             }
+            
+         }
+             
+            img 
+            {
+                width: 100%;
+                height:  150px;
+
+               
+                // &:hover
+                // {
+                //    clip-path: circle(100.0% at 50% 100%);
+                // }
+                
+            }
+        }
+       
+    }
+
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1400px)
+{
+    html
+    {
+        font-size: 80%;
+    }
+    header
+{
+position: fixed;
+padding:1rem 4rem;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+    
+@media (max-width:1200px)
+{
+    html
+    {
+        font-size: 70%;
+    }
+    header
+{
+position: fixed;
+padding: 1rem 2.7rem;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+@media (max-width:991px)
+{
+    html
+    {
+        font-size: 65%;
+    }
+    header
+{
+position: fixed;
+padding: 1rem 2rem;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px)
+{
+    html
+    {
+        font-size: 62%;
+    }
+    header
+{
+position: fixed;
+padding: .7rem 1.5rem;    
+}
+
+
+
+    
+}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:450px)
+{
+    html
+    {
+        font-size: 55%;
+    }
+    header
+{
+position: fixed;
+padding: .8rem 2.5rem;    
+}
+
+
+
+header
+{
+
+
+.logo
+{
+   
+    .brand-name, span
+    {
+        font-family: 'Island Moments', cursive;
+        font-style:italic;
+       font-weight: 100 ;
+       font-size: 2rem;color: white;
+    }
+    .brand-para
+    {
+        position: absolute;
+        top:80%;
+        left: 1%;
+        font-size: .8rem;color: white;
+    }
+}
+    .menu
+    {
+       display: flex;
+       justify-content: right;
+       align-items: center;
+       color: white;
+       letter-spacing: .08rem;
+       position: relative;
+
+
+       #menu-btn
+       {
+           width: 5%;
+           display: block;
+           
+           img 
+           {
+            width: 100%;
+           }
+       }
+       ul 
+       { display: flex;
+        position: fixed;
+        top: 300%; 
+        position: absolute;
+        flex-direction: column;
+        width: 200%;
+        background: rgba(39, 35, 35, 0.8);
+        clip-path: circle(0.3% at 100% 0);
+
+        &.active
+        {
+            clip-path: circle(141.4% at 100% 0);
+        }
+
+           p
+           {
+            font-size: 1rem;
+            margin-left: 1rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin: 1rem;
+            text-align: center;
+            display: block;
+            
+
+            &:focus,&:hover
+            {
+                color: rgb(122, 117, 117);
+            }
+
+          
+           }
+       }
+    }
+
+}
+
+
+.home
+{
+    background:linear-gradient(rgba(0, 0, 0, .8),rgba(0, 0, 0, .7)), url('/img/main\ bg.png') no-repeat;
+    max-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    
+
+    .box-model
+    {
+        display: flex;
+        flex-direction: column;
+       
+
+        .box
+        {
+            
+           h1 
+           {
+               font-size: 3.5rem;
+           }
+
+           .icons
+           {
+               i 
+               {
+                   margin: 1rem .5rem;
+                   cursor: pointer;
+
+                   &:hover
+                   {
+                      color: rgb(223, 111, 20);
+                   }
+
+               }
+           }
+           .buttons
+           {
+               display: flex;
+               cursor: pointer;
+
+               .btn
+               {
+                   margin: 1rem ;
+                   border-radius: 5rem;color: black;
+                   padding: .2rem 2rem;background: rgb(197, 197, 197);
+                   border: .1rem solid rgb(197, 197, 197);
+
+                   &:hover
+                   {
+                       background: transparent;
+                       color:rgb(197, 197, 197);;
+                   }
+               }
+           }
+
+            &.home-content
+            {
+                padding:11rem 0  6rem 5rem;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+               
+            }
+           
+
+            img 
+        {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        }
+       
+        
+    }
+}
+
+  section 
+  {
+      padding: 1rem;
+  }
+}
